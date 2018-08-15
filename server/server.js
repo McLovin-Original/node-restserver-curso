@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 //parse aplication/x-www-form
 app.use(bodyParser.json());
 
-app.use(require('./routes/usuario'));
+app.use(require('./routes/index'));
 
 
 mongoose.connect(process.env.URLDB ,(err,res) => {
